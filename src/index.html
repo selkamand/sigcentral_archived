@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/542777bffc.js" crossorigin="anonymous"></script>
+  <title>SigCentral</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container bg-white flex py-1 place-items-center">
+      <div class="bg-[url('/img/sigsim_hex_mini.jpeg')] w-16 h-16 bg-cover bg-center"></div>
+      <h1 class="px-12 text-sc-blue text-4xl font-extrabold">SigCentral</h1>
+      <ul class="flex uppercase flex-1 justify-end">
+        <li
+          class="text-lg font-bold decoration-4 hover:underline decoration-sc-red hover:scale-125 transition duration-100 px-4 cursor-pointer">
+          Home
+        </li>
+        <li
+          class="text-lg font-bold decoration-4 hover:underline decoration-sc-red hover:scale-125 transition duration-100 px-4 cursor-pointer">
+          Signatures
+        </li>
+        <li
+          class="text-lg font-bold decoration-4 hover:underline decoration-sc-red hover:scale-125 transition duration-100 px-4 cursor-pointer">
+          Downloads
+        </li>
+        <li
+          class="text-lg font-bold decoration-4 hover:underline decoration-sc-red hover:scale-125 transition duration-100 px-4 cursor-pointer">
+          Contact Us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <div class="py-1"></div>
+  <div class="container bg-white pb-12">
+    <div class="flex flex-col items-center">
+      <h2 class="text-sc-blue font-bold text-xl pt-6">Scars in the multiome</h2>
+      <p class="text-center pt-2 pb-4">Pocesses that create cancer scar the genome, transcriptome and
+        methylome. SigCentral consolodates knowledge about the impact of tumorigenic processes in the multiome</p>
+      <div class="bg-[url('/img/sigsim_hex.jpeg')] w-80 h-80 bg-cover bg-center"></div>
+      <hr>
+    </div>
+
+    <!-- SearchBar -->
+    <div class="flex flex-col items-center pt-10">
+      <p class="font-semibold pb-1">Search by Tumorigenic Process</p>
+      <form class="w-9/12 mx-auto">
+        <label for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm bg-sc-blue text-sc-white"
+            placeholder="e.g. APOBEC / RAG / Chemotherapy " required />
+          <button type="submit"
+            class="text-white absolute end-2.5 bottom-2.5 bg-sc-white text-sc-red hover:bg-white hover:text-sc-red   focus:ring-4 focus:outline-none  focus:bg-sc-red font-medium rounded-lg text-sm px-4 py-2">Search</button>
+        </div>
+      </form>
+    </div>
+    <!-- Cards -->
+    <div class="grid grid-cols-4 pt-10 gap-6 w-full place-items-center">
+
+      <!-- Radiotherapy -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl font-semibold uppercase pt-2">Radiotherapy</h3>
+        <i class="fa-solid fa-radiation text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Directly damages DNA. Common in CNS tumours</p>
+
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-black">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-black">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Hyperactive RAG-->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Recombination</h3>
+        <i class="fa-solid fa-scissors text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Enogenous recombination enzymes (RAGs) are hyperactivated in immune cancers
+        </p>
+
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-black">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-black">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Methytransferases -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Methytransferase</h3>
+        <i class="fa-solid fa-timeline text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Global methylation disrupted by DNMT3A dysfunction. Common in Leukaemia.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-white">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">METH</div>
+        </div>
+      </div>
+
+      <!-- Spliceosome -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Spliceosome</h3>
+        <i class="fa-solid fa-solid fa-bezier-curve text-4xl pb-4 rotate-180"></i>
+        <p class="pt-6 px-3 text-center">Spliceosome dysfunction leads to widespread abberant isoform creation.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-white">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Ultraviolet -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Ultraviolet Radiation</h3>
+        <i class="fa-solid fa-sun text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Exposure to UV induces very specific patterns of mutations in DNA.
+        </p>
+        <p class="pt-2 px-3 text-center">Causes
+          melanoma and perhaps some blood cancers
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Mismatch Repair -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Mismatch Repair deficiency</h3>
+        <i class="fa-solid fa-shield-halved text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Failure to repair small mutations leads to their accumulation in the tumour
+          genome
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Homologous Repair -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Homologous Repair Deficiency</h3>
+        <i class="fa-solid fa-shield-halved text-4xl pt-4 scale-x-[-1]"></i>
+        <p class="pt-6 px-3 text-center">Failure to repair large double-stranded breaks leads to their accumulation in
+          the tumour
+          genome
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- APOBEC -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">APOBEC</h3>
+        <i class="fa-solid fa-shield-virus text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Inflammatory stimuli hyperactivate endogenous mutagenic enzymes in immune cell
+          or
+          viral-infected cancers
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Chemotherapy -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Chemotherapy</h3>
+        <i class="fa-solid fa-syringe text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Chemotherapy induces widespread genomic
+          damage treatment-surviving cancer cells
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Smoking -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Smoking</h3>
+        <i class="fa-solid fa-smoking text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Tobacco smoke is highly mutagenic and leads to highly specific patterns of
+          genomic
+          damage in the lungs of smokers
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Viral Infection -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Viruses</h3>
+        <i class="fa-solid fa-virus text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Oncogenic viruses can be detected from their nucleic acids in tumors
+          or from
+          immune-related genomic damage
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- BER -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Defective Base Excision Repair</h3>
+        <i class="fa-solid fa-diagram-next text-4xl pb-4 scale-y-[-1]"></i>
+        <p class="pt-6 px-3 text-center">Failure to repair base lesions removed by specific glycosylases leads to their
+          accumulation in the tumour genome
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+      <!-- Checkpoint Failures -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Leaky Checkpoints</h3>
+        <i class="fa-solid fa-wave-square text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Compromised cell-cycle checkpoints can no longer prevent replication of cells
+          with genomic
+          damage.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+
+      <!-- ADAR -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">ADAR</h3>
+        <i class="fa-solid fa-xmarks-lines text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Hyperactive dsRNA editing enzyme ADAR1 mutates transcripts. Can have oncogenic
+          or
+          anti-cancer effects.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-white">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-blue">METH</div>
+        </div>
+      </div>
+
+      <!-- NHEJ -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">NHEJ repair</h3>
+        <i class="fa-solid fa-hammer text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Non-homologous end-join repair of DSB leaves behind a characteristic pattern of
+          mutations.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+
+      <!-- TOP2A -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">TOP2A loss</h3>
+        <i class="fa-solid fa-rotate text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Knockout of topoisomerases compromise
+          torsional DNA stress relief, leading to accumulation of indels.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+
+
+      <!-- Artificial -->
+      <div
+        class="flex flex-col bg-white w-full h-80 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center hover:shadow-2xl hover:scale-110 transition duration-100 hover:border-8 hover:border-sc-red">
+        <h3 class="text-xl text-center font-semibold uppercase pt-2">Sequencing</h3>
+        <i class="fa-solid fa-triangle-exclamation text-4xl pt-4"></i>
+        <p class="pt-6 px-3 text-center">Failure to correct for systematic errors in omics-sequencing leads to
+          accumulation of fake mutations in tumour samples.
+        </p>
+        <div class="flex flex-row mt-auto pb-2">
+          <div class="px-2 font-semibold text-l text-sc-blue">DNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">RNA</div>
+          <div class="px-2 font-semibold text-l text-sc-white">METH</div>
+        </div>
+      </div>
+      <!-- <div
+        class="flex flex-col bg-white w-3/12 h-64 border-r-2 border-4 border-gray-200 rounded-lg shadow items-center">
+        <h3 class="text-lg font-semibold uppercase pt-2">aetiological signatures</h3>
+        <p class="pt-6 text-center">Patterns multiomic abberations that are caused by the phenomena they predict</p>
+        <div class="pb-14"></div>
+        <a href="#"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Browse
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a>
+      </div>
+      <div class="bg-white w-3/12 h-64 border-r-2 border-4 border-gray-200 rounded-lg shadow"></div>
+      <div class="bg-white w-3/12 h-64 border-r-2 border-4 border-gray-200 rounded-lg shadow"></div> -->
+    </div>
+
+  </div>
+</body>
+
+</html>
